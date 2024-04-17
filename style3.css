@@ -1,0 +1,57 @@
+.recuadro3 {
+    min-width: 100%; /*el ancho minimo del recuadro */
+    max-width: 800px;  /*el ancho maximo del recuadro*/
+    width: 90%;   /*el ancho del recuadro*/
+    margin: auto;   /*se modifica cada vez */
+
+    padding-top: 120px;   /*es el margen del relleno superios */
+    display: flex;
+    flex-direction: column;  /*alineacion y distribucion en columna*/
+    align-items: center;
+    justify-content: center;
+}
+
+.recuadro3 .card3 {
+    background: white;  /*color del recuadro*/
+    height: 90%;  /*altura del recuadro*/
+    padding: 40px;   /*es el margen del recuadro*/
+    border-radius: 5px;   /*modifica las intersecciones de la forma*/
+    box-shadow: black 0px 8px 24px; /*es la sombre que da al recuadro aparenta ser de forma 3D*/
+}
+
+.card3 h3,
+h4 {
+    text-align: center;
+    justify-content: center; /*en el h3 y h4 lo centramos usando text align justify content y align content*/
+    align-content: center;
+}
+
+
+.menu1 {
+    background: white;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: black 0px 8px 24px;
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.menu1 h3 {
+    width: 30%;
+    margin: 10px;
+}
+
+.menu2 {
+    background: white;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: black 0px 8px 24px;
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.menu2 h3 {
+    width: 30%;
+    margin: 10px;
+}
+

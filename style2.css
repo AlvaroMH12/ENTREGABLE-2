@@ -1,0 +1,119 @@
+.recuadro2 {
+    min-width: 100vh; /*el ancho minimo del recuadro */
+    max-width: 800px;   /*el ancho maximo del recuadro*/
+    width: 90%;  /*el ancho del recuadro*/
+    margin: auto;   /*se modifica cada vez */
+
+    padding-top: 120px;  /*es el margen del relleno superios */
+    display: flex;
+    flex-direction: column;   /*alineacion y distribucion en columna*/
+    align-items: center;
+    justify-content: center;
+}
+
+.recuadro2 .card2 {
+    background: white;  /*color del recuadro*/
+    height: 90%;   /*altura del recuadro*/
+    width: 150%;
+    padding: 20px;   /*es el margen del recuadro*/
+    border-radius: 5px;   /*modifica las intersecciones de la forma*/
+    box-shadow: black 0px 8px 24px;   /*es la sombre que da al recuadro aparenta ser de forma 3D*/
+}
+
+.slider li {
+    text-align: center;
+    justify-content: center; /*en el slider lo centramos usando text align justify content y align content*/
+    align-content: center;
+}
+.card2 h3 {
+    text-align: center;
+    justify-content: center;/*en el h3 lo centramos usando text align justify content y align content*/
+    align-content: center;
+}
+
+.formulario {
+    
+    justify-items: center; /*en el slider lo centramos usando text align justify items y diplay grip*/
+    text-align: center;   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/*define que el formulario este dividido en 2 y 1 fraccion*/
+    grid-template-rows: repeat(3, auto);/*define 3  filas de altura automatica*/
+    width: 1200px;
+    border-radius: 10px;
+    max-width: 100%;
+ }
+ .legend {
+    color: black;
+    font-weight: 800;/*grosor de la fuente de texto*/
+    margin-top: 2rem;/*establece margenes superiores*/
+    margin-bottom: 1rem;/*establece margenes inferiores*/
+    padding: 1rem;
+    grid-column: span 2;/*el elemento ocupe 2 columnas en la cuadricula*/
+}
+
+ .g1 {
+    grid-column: span 1;
+ }
+ 
+  .g1 label {
+    color: black;
+    margin-top: 2rem;/*establece margenes superiores */
+    padding: 3rem;
+    margin-bottom: 2rem;/*define el relleno de la etiqueta en espacios*/
+ }
+ .g2 {
+    grid-row: span 2;/*los elementos ocupen 2 filas */
+    grid-column: span 2;/*los elementos ocupen 2 columanas*/
+ }
+ .input {
+   width: 100%;
+   grid-template-columns: repeat(4,2fr);/*define que el este distribuido en 4 columnas y 2 fracciones*/
+   color: black;
+   background: #fff;
+   border: 3px solid transparent;
+   border-radius: 3px;
+   height: 45px;
+   line-height: 45px;
+   padding: 0 40px 0 10px;
+   transition: .3s ease all;/*transicion de 3s con todos los elementos */
+ }
+ .input2 {
+    height: auto;
+    grid-template-columns: repeat(2,1fr);/*define la distribucion de 2 columnas 1 fraccion*/
+    padding: 0 40px 0 10px;/*relleno al rededor de los elementos */
+    margin: 20px;
+    
+ }
+
+
+ body {
+    justify-content: center     ;
+ }
+ 
+ main {
+    max-width: 50%;
+    width: 100%;
+    margin: auto;/*margen que encierra el formualario*/
+    padding: 0;
+ }
+
+ .boton {
+    background: black;/*color de fondo*/
+    color: white;/*color de letra*/
+    display: inline-flex;/*establece el tipo de visualizacion del boton sea flexible*/
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family:'Roboto',sans-serif;/*tipo de letra se utilizara*/
+    font-weight: 500;
+    border: none;/*elimina cualquier borde del boton*/
+    cursor: pointer;/*permite que interactue el mouse con el boton */
+    text-transform: uppercase; /*trasforma el texto en en Mayusculas*/
+    transition: .3s ease all;/*transicion de 3s y una temporizacion de aceleracion gradual*/
+    position: relative;/*modifica la posicion si se utiliza propiedades como right botton o left*/
+    border-radius: 20px;
+ }
+
+ 

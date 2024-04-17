@@ -1,0 +1,151 @@
+*{
+    padding: 0; /*todos los lados sean 0 osea no se mueva*/
+    margin: 0;/*margen de los lados no se modifique*/
+    box-sizing: border-box; /*permite que el tamaño del contenido sea constante o no se modifique  por mas que intentes modificar otras etiquetas */
+}
+
+body {
+    background: aquamarine; /*color de fondo*/
+    font-family: 'Roboto', sans-serif; /*tipo de letra que utilizara el body*/
+}
+
+a { 
+    text-decoration: none;
+}
+
+
+
+.titulo {
+    display: flex;         /*es para posicionar los elememtos del menu*/
+    flex-direction: column;/*es para posicionar los elememtos del menu*/
+    align-items: center;     /*es para posicionar los elememtos del menu*/
+    justify-content: center;
+    height: calc(100vh - 80px);/*es para posicionar los elememtos del menu*/
+    
+}
+
+.menu {
+    border-radius: 5px;
+    background: blue;    /*cambiamos el color de menu */
+    height: 50px;  /*la altura del menu */
+    box-shadow: black 0px,8px,24px; /*la sombra del menu */
+    display: flex; /*es para posicionar los elememtos del menu*/
+    overflow: hidden; /*permite que el contenido del menu no se desborde*/
+    position: sticky;/*permite que la posicion del menu se fije en su mismo lugar y no se modifique*/
+    top: 0;
+   
+}
+
+.menu .indicador {
+    width: 0px;
+    height: 7px;  
+    background: black;
+    position: absolute;  /*esto es para abarcar todo el menu*/
+    bottom: 0;  
+    transition: .3s ease-out all;  /*esta es una transicion que dura 3 segundos con un temporizcion de salida suave a todos los elementos*/
+    transform: translate(-500px);  /*esto movera el elemento en la base del menu */
+}
+.menu a:hover {
+    background: #f0f0f0;   /*es una animacion basica que cuando colocas el cursor del mouse en el menu tendra un color de fondo blanco */
+}
+.menu a {
+    flex: 1;
+    height: 100%;    /*esto es para que el ancho del menu abarque*/
+    display: flex;     
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    transition: .2s ease-in-out all;   /*es una transicion que dura 2 segundos en este caso */
+    font-weight: 500;   /*es para establecer el grosor de la fuente del texto*/
+}
+
+.titulo h3 {
+    font-size: 80px;   /*establece el tamaño de la fuente del texto */
+}
+.recuadro {
+    min-width: 100vh;   /*el ancho minimo del recuadro */
+    max-width: 800px;   /*el ancho maximo del recuadro*/
+    width: 90%;     /*el ancho del recuadro*/
+    margin: auto;    /*se modifica cada vez */
+
+    padding-top: 120px;   /*es el margen del relleno superios */
+    display: flex;  
+    flex-direction: column;   /*alineacion y distribucion en columna*/
+    align-items: center;
+    justify-content: center;
+}
+
+.recuadro .card1 {
+    background: white;   /*color del recuadro*/
+    height: 90%;      /*altura del recuadro*/
+    padding: 40px;    /*es el margen del recuadro*/
+    border-radius: 5px;      /*modifica las intersecciones de la forma*/
+    box-shadow: black 0px 8px 24px;    /*es la sombre que da al recuadro aparenta ser de forma 3D*/
+}
+
+.slider li {
+    text-align: center;   
+    justify-content: center;  /*en slider lo centramos usando text align justify content y align content*/
+    align-content: center;
+}
+.card1 h3 {
+    text-align: center;
+    justify-content: center; /*en slider lo centramos usando text align justify content y align content*/
+    align-content: center;
+}
+.slider img {
+    width: 100%;
+    height: 100%;    /*modificamos el tamaño del las imagenes en la autura y ancho estado normal*/
+    object-fit: cover; /*ajuste del borde y el tamaño de las imagenes */
+    border-radius: 15px; 
+   
+
+}
+.contenedor {
+    position: relative; /*dezplazara de su posicion original*/
+    width: 800px;
+    height: 400px;
+    background-color: #e0e0e0; /*color del fondo*/
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);    /*sombra de del contenedor*/
+    border-radius: 15px;
+    overflow: hidden; /*controla el desbordamiento de los elementos en pocas palabras los mantiene dentro del contener y no salgan de ahi*/
+}
+
+.carrusel {
+    width: 1200%;
+    height: 100%; /**/
+    display: flex;
+
+}
+
+.left,
+.right {
+    display: flex; 
+    position: absolute;
+    top: 50%; /*margin de la parte superior*/
+    font-size: 1.5rem;
+    background-color: transparent; /*color del fondo transparente */
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;/*define el grosor de la fuente de texto */
+    cursor: pointer; /*para el al momento de pasar el mouse este interartue con el este */
+    color: #ffffff81;
+    transform: translate(0,-50%); /*aplica una traslacion de arriba del 50% de su tamaño */
+    transition: .5s ease; /*establese  una transicion de 5 segundo con una aceleracion gradual */
+    user-select: none; /*desabilita la seleccion de texto del los elementos */
+}
+
+.left:hover,
+.right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.left {
+    left: 10px; /*proporciona una distancia del borde izquierdo*/
+}
+
+.right {
+    right: 10px; /*proporciona una distancia del borde derecho*/
+}

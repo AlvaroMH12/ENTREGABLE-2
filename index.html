@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="style3.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+
+   <!--MENU Y CARRUSEL DE IMAGENES -->
+   <div class="titulo" id="0">
+      <h3>COMEDOR SENATIANO</h3>
+   </div>
+   <nav class="menu" id="menu">
+      <a href="#1">INICIO</a>
+      <a href="#2">FORMULARIO</a>
+      <a href="#3">MENÚ</a>
+      <a href="#4">MEDIOS DE PAGO</a>
+      <span class="indicador" id="indicador"></span>
+    
+   </nav>
+   <div class="secciones">
+      <div class="recuadro" id="1">
+         <div class="card1">
+            <h3>INSTRUCCIONES</h3>
+            <div class="i">
+               <div class="contenedor">
+                  <div class="carrusel" id="carrusel">
+                     <section class="slider" id="slider">
+                        <img src="C:\Users\LENOVO\Pictures\formulario.jpg" alt="">
+                        <li>1. Completa el formulario</li>
+                     </section>
+                     <section class="slider" id="slider">
+                        <img src="C:\Users\LENOVO\Pictures\opciones.png" alt="" >
+                        <li>2. Selecciona los productos que deseas consumir</li>
+                     </section>
+                     <section class="slider" id="slider">
+                        <img src="C:\Users\LENOVO\Pictures\pago.png" alt="" >
+                        <li>3. Elige el medio de pago</li>
+                     </section>
+                  </div>
+                  <div class="left"></div>
+                  <div class="right"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <!--FORMULARIO-->
+   <div class="recuadro2" id="2">
+      <div class="card2">
+         <h3>FORMULARIO</h3>
+         <main>
+            <form class="formulario" onsubmit="return enviarDatos('')">
+               <legend class="legend">COMPLETA EL FORMULARIO</legend>
+               <div class="g1">
+                  <label class="label">NOMBRE</label>
+                  <input class="input" type="text"  name="nombre"placeholder="Ingresa tu nombre">
+               </div>
+               <div class="g1">
+                  <label class="label">APELLIDO</label>
+                  <input class="input"type="text" name="apellido" placeholder="Ingresa tu apellido">
+               </div>
+             
+               <div class="g1">
+                  <label class="label">EDAD</label>
+                  <input class="input" type="text" name="edad" placeholder="Ingresa tu edad">
+               </div>
+               <div class="g1">
+                  <label class="label">SEXO</label>   
+                  <br>
+                  <input type="radio" class="input2" name="sexo">Masculino
+                  <input type="radio" class="input2" name="sexo">Femeninino
+               </div>
+               <br>
+               <div class="g2">
+                  <button class="boton" type="submit">Enviar</button>
+               </div>
+
+            </form>
+         </main>
+      </div>
+   </div>
+   <!--MENU DEL DIA-->
+   <div class="recuadro3" id="3">
+      <div class="card3">
+         <h3>BIENVENIDO</h3>
+         <h4>¿QUE DESEA ORDENAR?</h4>
+         <div class="menu1">
+            <h3>MENU MAÑANERO</h3>
+            <ul>
+               <li>1. Clásico:
+       
+                   Pan con mantequilla y mermelada: Un clásico que nunca falla. Se puede elegir entre una gran variedad de panes, mermeladas y mantequillas.</li><br>
+                   <img src="C:\Users\LENOVO\Pictures\Opcion 1.jpg">
+                   <p></p>
+                   <br>
+                   <button class="boton" type="submit">SOLICITAR</button>
+               <li>2. Energético:
+       
+                   Batido de frutas: Un batido con frutas frescas y yogur para un extra de vitaminas.</li><br>
+                   <img src="C:\Users\LENOVO\Pictures\Option 2.jpg">
+                   <p></p>
+                   <br>
+                   <button class="boton" type="submit">SOLICITAR</button>
+               <li>3. Vegano:
+       
+                   Gachas de avena con frutas y frutos secos: Una opción saludable y saciante</li><br>
+                   <img src="C:\Users\LENOVO\Pictures\Option 3.jpg">
+                   <p></p>
+                   <br>
+                   <button class="boton" type="submit">SOLICITAR</button>
+            </ul>
+       
+         </div>
+         <div class="menu2">
+            <h3>MENU NOCTURNO</h3>
+            <ul>
+               <li>1. Ligero:
+       
+                   Ensalada de verduras: Una ensalada fresca con una variedad de verduras y un aderezo ligero.</li><br>
+                   <p></p>
+                   <img src="C:\Users\LENOVO\Pictures\option 4.jpg">
+                   <p></p>
+                   <br>
+                   <button class="boton" type="submit">SOLICITAR</button>
+               <li>2. Completo:
+       
+                   Pasta con salsa boloñesa: Un plato clásico que gusta a todos</li><br>
+                   <p></p>
+                   <img src="C:\Users\LENOVO\Pictures\option 5.jpg">
+                   <p></p>
+                   <br>
+                   <button class="boton" type="submit">SOLICITAR</button>
+               <li>3. Vegetariano:<br>
+       
+                   Hamburguesa de lentejas: Una hamburguesa vegetariana rica en proteínas</li><br>
+                   <p></p>
+                   <img src="C:\Users\LENOVO\Pictures\option 6.jpg">
+                   <p></p>
+                   <br>
+                   <button class="boton" type="submit">SOLICITAR</button>
+             </ul>
+             <br>
+             <center><button class="boton" type="submit">LISTO</button></center>
+         </div>
+      </div>
+   </div>
+   <!--MEDIO DE PAGO-->
+   <div class="recuadro4" id="4">
+      <div class="card4">
+         <h3>Medio de pago</h3>
+      <button type="submit" class="boton2">EFECTIVO</button>
+      
+      <button type="submit" class="boton2">TARGETA</button>
+      </div>
+      
+   </div>
+   
+   <script src="app.js" ></script>
+</body>
+</html>
